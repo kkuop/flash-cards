@@ -1,4 +1,13 @@
 @import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 .App {
     font-size: 1.1em;
+}
+
+.fc-card {
+    display:inline-block;
+    width: 90px;
+    height:100px;
+    background-color: wheat;
+    margin:10px;
 }
