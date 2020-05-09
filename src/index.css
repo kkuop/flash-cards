@@ -4,8 +4,12 @@
     font-size: 1.1em;
 }
 
-.fc-card {
+.fc-cards {
     display:inline-block;
+}
+
+.fc-card {
+    padding-top:10px;
     width: 90px;
     height:100px;
     background-color: wheat;
