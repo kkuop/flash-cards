@@ -34,3 +34,7 @@
 .fc-btn {
     margin-top:15px;
 }
+
+.active {
+    box-shadow: 0 0 5px 3px #ffffff;
+}

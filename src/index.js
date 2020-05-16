@@ -79,25 +79,26 @@ class CategoryList extends React.Component {
     render() {
         return (
             this.props.categories.map(cat => {
-                return <Category name = {cat}/>
+                return <Category name = {cat} key={cat.id}/>
             })
         );
     }
 }
 
 class Category extends React.Component {
+    state = {
+        isActive : false,
+    }
     render() {
         return (
             <div className="row fc-cards">
                 <div className="col-sm text-center">
-                    <div className="fc-card">{this.props.name}</div>
+                    <div className={(this.state.isActive) ? "fc-card active" : "fc-card"} onClick={() => this.setState({isActive: true})}>{this.props.name}</div>
                 </div>
             </div>
         );
     }
 }
-
-
 
 ReactDOM.render(
     <App />,
