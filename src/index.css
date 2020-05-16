@@ -1,9 +1,12 @@
 @import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 .App {
+    
     font-size: 1.1em;
 }
-
+.body {
+    background-color: #555;
+}
 .fc-cards {
     display:inline-block;
 }
@@ -14,4 +17,20 @@
     height:100px;
     background-color: wheat;
     margin:10px;
+    cursor: pointer;
+}
+
+.main-card {
+    background-color: rgb(255, 255, 255);
+    height:350px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.content-main {
+    padding-top: 150px;
+}
+
+.fc-btn {
+    margin-top:15px;
 }
