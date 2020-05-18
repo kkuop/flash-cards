@@ -93,7 +93,7 @@ class Category extends React.Component {
         return (
             <div className="row fc-cards">
                 <div className="col-sm text-center">
-                    <div className={(this.state.isActive) ? "fc-card active" : "fc-card"} onClick={() => this.setState({isActive: true})}>{this.props.name}</div>
+                    <div className={(this.state.isActive) ? "fc-card active" : "fc-card"} onClick={() => (this.state.isActive) ? this.setState({isActive: false}): this.setState({isActive:true})}>{this.props.name}</div>
                 </div>
             </div>
         );
